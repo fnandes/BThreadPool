@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>BThreadPool</id>
+    <version>$version$</version>
+    <authors>Pedro Henrique B. Fernandes</authors>
+    <owners>Buy4</owners>
+    <projectUrl>https://github.com/pedroaliens/BThreadPool</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/pedroaliens/BThreadPool/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <title>BThreadPool</title>
+    <summary>A better implemented ThreadPool.</summary>
+    <description>A better implemented ThreadPool.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>thread threading parallel-programming parallelism thread-pool</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin/Release/net452/BThreadPool.dll" target="lib\net452" />
+    <file src="bin/Release/netcoreapp1.1/BThreadPool.dll" target="lib\netcoreapp1.1" />
+  </files>
+</package>
