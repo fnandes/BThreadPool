@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace BThreadPool
 {
-    public class ThreadPool
+    public class ThreadPool : IDisposable
     {
         private readonly LinkedList<Thread> _workers; // queue of worker threads ready to process actions
         private readonly LinkedList<Action> _tasks = new LinkedList<Action>(); // actions to be processed by worker threads

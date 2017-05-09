@@ -18,7 +18,7 @@ if ($LASTEXITCODE -ne 0)
     throw "dotnet restore failed with exit code $LASTEXITCODE"
 }
 
-& dotnet pack .\src\BThreadPool -c Release -o .\artifacts
+& dotnet pack .\src\BThreadPool -c Release -o ../../artifacts
 
 # Rollback version on project files
 ls */*/*.csproj | foreach { echo $_.FullName} |
