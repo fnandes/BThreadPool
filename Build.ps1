@@ -5,7 +5,7 @@ $actual_version = "$env:APPVEYOR_BUILD_VERSION"
 Write-Host "Set version to $actual_version"
 
 # Set version on project files
-ls */*/project.json | foreach { echo $_.FullName} |
+ls */*/*.csproj | foreach { echo $_.FullName} |
 foreach {
     $content = get-content "$_"
     $content = $content.Replace("99.99.99", $actual_version)
@@ -21,7 +21,7 @@ if ($LASTEXITCODE -ne 0)
 & dotnet pack .\src\BThreadPool -c Release -o .\artifacts
 
 # Rollback version on project files
-ls */*/project.json | foreach { echo $_.FullName} |
+ls */*/*.csproj | foreach { echo $_.FullName} |
 foreach {
     $content = get-content "$_"
     $content = $content.Replace($actual_version, "99.99.99")

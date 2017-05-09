@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp1.1;net452</TargetFrameworks>
+
+    <PackageVersion>99.99.99</PackageVersion>
+    <Title>BThreadPool - A Better ThreadPool.</Title>
+    <PackageId>BThreadPool</PackageId>
+    <Authors>Pedro Henrique B. Fernandes</Authors>
+    <Description>A better implemented Thread Pool for C#.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>thread threading parallel-programming parallelism thread-pool</PackageTags>
+    <RepositoryUrl>https://github.com/pedroaliens/BThreadPool</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
